@@ -72,8 +72,9 @@ function lab1_4() {
 }
 
 function lab1_5() {
-    let m = 15;
     let n = 6;
+    let m = prompt('Введите высоту матрицы: ', '')
+    
 
     var matrix = new Array(m);
     for (var i = 0; i < m; i++) {
