@@ -45,7 +45,7 @@ function lab1_3() {
     let ans;
     do {
         ans = prompt('введи число больше 100: ', '');
-        if (ans.key == "Escape") break;
+        if (ans.key == null) break;
     } while (ans <= 100);
 }       
 
@@ -67,7 +67,7 @@ function lab1_4() {
             }
         }
         else if (i != 2) flag = 0;
-        if (flag==1) {document.write(i + '\n');}
+        if (flag==1) {console.log(i + '\n');}
     }
 }
 
