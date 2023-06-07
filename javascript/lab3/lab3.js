@@ -1,5 +1,8 @@
 "use strict";
 
+// возвращает n-е число Фибоначчи
+import {fib}  from '../lab2/lab2.js';
+
 //возвращает дробную часть числа num
 export function getDecimal(num) {
   let w = Math.abs(num - Math.floor(num));
@@ -48,9 +51,6 @@ export function camelize(str) {
 
 
 
-
-// возвращает n-е число Фибоначчи
-import { fib } from '../lab2/lab2.js';
 
 
 //для натурального n возвращает массив, заполненный числами Фибоначчи до n-го (не включая его)
