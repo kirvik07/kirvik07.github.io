@@ -4,91 +4,84 @@
 <meta charset="utf-8">
 <title>Таблицы</title>
 <style>
-table.one {
+
+table {
 	width: 200px;
-	border: 1px solid gray;
+	border: 1px solid black;
 	margin: 20px;
 	float: left;
+	border: 0;
 }
-td.one, th.one {
-	border: 1px solid gray;
+td, th {
+	border: 1px solid black;
 	padding: 30px;
 }
+
 </style>
 </head>
 <body>
-	<table><tbody><tr><td><table class="one">
-      
+	<table><tbody><tr><td style="border: 0;" ><table>
 		<caption>1-я таблица</caption>
-		<tbody><tr>
-<th class="one" rowspan="2">1
-</th>
-<td class="one" colspan="2">2
-</td>
-    </tr>
-    <tr>
-<td class="one">5
-</td>
-<td class="one">6
-</td>
-</tr>
-</tbody>
-	</table>
-</td><td><table class="one">
-		<caption>2-я таблица</caption>
 		<tbody>
 		<tr>
-			<th colspan="2" class="one">1</th>
-			
+			<td rowspan="2">1</td>
+			<td colspan="2">2</td>
+
 		</tr>
 		<tr>
-			<td rowspan="2" class="one">3</td>
-			<td class="one">4</td>
-		</tr>
-		<tr>
-			<td class="one">6</td>
-			
+			<td>5</td>
+			<td>6</td>
 		</tr>
 		</tbody>
 	</table>
+</td><td style="border: 0;" ><table>
+	<caption>2-я таблица</caption>
+	<tbody>
+	<tr>
+		<td colspan="2">1</td>
+	</tr>
+	<tr>
+		<td rowspan="2">3</td>
+		<td>4</td>
+	</tr>
+	<tr>
+		<td>6</td>
+	</tr>
+	</tbody>
+</table>
 	
-</td></tr><tr><td>
-	<table class="one">
+</td></tr><tr><td style="border: 0;">
+	<table>
 		<caption>3-я таблица</caption>
 		<tbody>
 		<tr>
-			<td class="one">1</td>
-			
-		<td rowspan="2" class="one">2</td></tr>
-		<tr>
-			<td class="one">3</td>
-			
+			<td>1</td>
+			<td rowspan="2">2</td>
 		</tr>
 		<tr>
-			<td colspan="2" class="one">5</td>
-			
+			<td>3</td>
+		</tr>
+		<tr>
+			<td colspan="2">5</td>
 		</tr>
 		</tbody>
 	</table>
-
 	
-</td><td>
+</td><td style="border: 0;" >
 	
 
-	<table class="one">
+	<table>
 		<caption>4-я таблица</caption>
 		<tbody>
 		<tr>
-			<th colspan="2" class="one">1</th>
-			
+			<td colspan="2">1</td>
 		</tr>
 		<tr>
-			<td class="one">3</td>
-			<td class="one">4</td>
+			<td>3</td>
+			<td>4</td>
 		</tr>
 		<tr>
-			<td colspan="2" class="one">5</td>
-			
+			<td colspan="2">5</td>
 		</tr>
 		</tbody>
 	</table>
