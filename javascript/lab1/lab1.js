@@ -1,5 +1,7 @@
+'use strict'
+
 function lab1_1() {
-    'use strict'
+
 
     let age, gender;
 
@@ -19,7 +21,7 @@ function lab1_1() {
 }
 
 function lab1_2() {
-    'use strict'
+    
     /*
 
     1 ворона
