@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 //функция возвращает x в степени n (n - целое число).
 function pow(x, n)
@@ -15,7 +15,7 @@ function sumTo(n)
 function factorial(n) {
     if (n <= 0)
     {
-        return 1; //возвращаем 1 для чисел, меньших 0
+        return 1n; //возвращаем 1 для чисел, меньших 0
     }
     else{
         return (BigInt (n) * BigInt(factorial(n-1))); //использование рекурсии 
@@ -23,8 +23,8 @@ function factorial(n) {
 }
 //функция возвращает n-е число Фибоначчи
 function fib(n) {
-    a = BigInt(1); // первое число Фиббоначи
-    b = BigInt(1); // второе число Фиббоначи
+    let a = BigInt(1); // первое число Фиббоначи
+    let b = BigInt(1); // второе число Фиббоначи
     if (n == BigInt(0))
     {
         return BigInt(0); //возвращаем нуль при n=0
@@ -32,9 +32,9 @@ function fib(n) {
     else
     {
         //алгоритм нахождения чисел Фиббоначи 
-        for (i = BigInt(3); i <= n; i++) 
+        for (let i = BigInt(3); i <= n; i++) 
         {
-            c = a + b;
+            let c = a + b;
             a = b;
             b = c;
         }
