@@ -44,13 +44,12 @@ function lab1_2() {
 }
 
 function lab1_3() {
-    let ans;
+    let num;
     do {
-        ans = prompt('введи число больше 100: ', '');
-        if (ans.key == null) break;
-    } while (ans <= 100);
-}       
-
+      num = prompt("Введите число больше 100:");
+    } while (num !== null && (isNaN(num) || +num <= 100));
+  }
+  
 
 function lab1_4() {
     let n = prompt("до какого простые искать будем: ", '');
